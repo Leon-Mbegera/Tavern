@@ -24,11 +24,14 @@ const getCocktailsFailure = (error) => ({
   payload: error,
 });
 
-const getCocktailsList = () => () => {
+const getCocktailsList = () => (dispatch) => {
   const endpoint = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list';
   axios.get(endpoint).then((response) => {
-    const cocktails = response;
-    console.log(cocktails);
+    const cocktails = response.data.drinks;
+    dispatch(getCocktailsSuccess(cocktails));
+  }).catch((error) => {
+    const errorMsg = error;
+    dispatch(getCocktailsFailure(errorMsg));
   });
 };
 
