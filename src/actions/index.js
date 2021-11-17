@@ -9,9 +9,10 @@ const getCocktailsRequest = () => ({
   type: GET_COCKTAILS_REQUEST,
 });
 
-const getCocktail = (cocktail) => ({
+const getCocktail = (title, image) => ({
   type: GET_COCKTAIL,
-  payload: cocktail,
+  title,
+  image,
 });
 
 const getCocktailsSuccess = (cocktails) => ({
@@ -25,7 +26,8 @@ const getCocktailsFailure = (error) => ({
 });
 
 const getCocktailsList = () => (dispatch) => {
-  const endpoint = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list';
+  dispatch(getCocktailsRequest());
+  const endpoint = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail';
   axios.get(endpoint).then((response) => {
     const cocktails = response.data.drinks;
     dispatch(getCocktailsSuccess(cocktails));
@@ -34,6 +36,15 @@ const getCocktailsList = () => (dispatch) => {
     dispatch(getCocktailsFailure(errorMsg));
   });
 };
+
+// const getEachCocktail = () => (dispatch) => {
+//   dispatch(getCocktailsRequest());
+//   cocktails.forEach(cocktail => {
+//     const title = cocktail.strDrink,
+//     const image = cocktail.strDrinkThumb;
+//   });
+//   dispatch(getCocktail(title, image));
+// }
 
 export {
   GET_COCKTAILS_REQUEST, GET_COCKTAILS_SUCCESS,
