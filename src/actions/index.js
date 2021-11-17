@@ -1,14 +1,22 @@
-const GET_COCKTAILS = 'GET_COCKTAILS';
+import axios from 'axios';
+
+const GET_COCKTAILS_REQUEST = 'GET_COCKTAILS';
 const GET_COCKTAILS_SUCCESS = 'GET_COCKTAILS_SUCCESS';
 const GET_COCKTAILS_FAILURE = 'GET_COCKTAILS_FAILURE';
+const GET_COCKTAIL = 'GET_COCKTAIL';
 
-const getCocktails = () => ({
-  type: GET_COCKTAILS,
+const getCocktailsRequest = () => ({
+  type: GET_COCKTAILS_REQUEST,
 });
 
-const getCocktailsSuccess = (cocktail) => ({
-  type: GET_COCKTAILS_SUCCESS,
+const getCocktail = (cocktail) => ({
+  type: GET_COCKTAIL,
   payload: cocktail,
+});
+
+const getCocktailsSuccess = (cocktails) => ({
+  type: GET_COCKTAILS_SUCCESS,
+  payload: cocktails,
 });
 
 const getCocktailsFailure = (error) => ({
@@ -16,7 +24,16 @@ const getCocktailsFailure = (error) => ({
   payload: error,
 });
 
+const getCocktailsList = () => () => {
+  const endpoint = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list';
+  axios.get(endpoint).then((response) => {
+    const cocktails = response;
+    console.log(cocktails);
+  });
+};
+
 export {
-  GET_COCKTAILS, GET_COCKTAILS_SUCCESS,
-  GET_COCKTAILS_FAILURE, getCocktails, getCocktailsSuccess, getCocktailsFailure,
+  GET_COCKTAILS_REQUEST, GET_COCKTAILS_SUCCESS,
+  GET_COCKTAILS_FAILURE, GET_COCKTAIL, getCocktailsRequest, getCocktailsList, getCocktail,
+  getCocktailsSuccess, getCocktailsFailure,
 };
