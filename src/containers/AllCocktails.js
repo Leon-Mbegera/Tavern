@@ -1,10 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import EachCocktail from './EachCocktail';
 
 const AllCocktails = ({ cocktails }) => {
   const seeCocktail = (cocktail) => {
-    <EachCocktail cocktail={cocktail} />;
+    <Link to="/Cocktail" className="nav-link">
+      <EachCocktail cocktail={cocktail} />
+      ;
+    </Link>;
   };
 
   return (
