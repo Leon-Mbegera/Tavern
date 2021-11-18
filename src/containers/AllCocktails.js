@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const AllCocktails = ({ cocktails }) => (
   <div>
@@ -10,5 +11,9 @@ const AllCocktails = ({ cocktails }) => (
     ))}
   </div>
 );
+
+AllCocktails.propTypes = {
+  cocktails: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default AllCocktails;
