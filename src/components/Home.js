@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCocktailsList } from '../actions/index';
+import AllCocktails from '../containers/AllCocktails';
 
 const Home = () => {
   const { cocktails } = useSelector((state) => state);
-  console.log(cocktails);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(
@@ -13,14 +13,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-      {cocktails.cocktails.map((cocktail) => (
-        <>
-          <p key={cocktail.idDrink}>{cocktail.strDrink}</p>
-          <img src={cocktail.strDrinkThumb} alt={cocktail.strDrinkThumb} />
-        </>
-      ))}
-    </div>
+    <main>
+      <AllCocktails cocktails={cocktails} />
+    </main>
   );
 };
 
