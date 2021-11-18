@@ -1,13 +1,19 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getCocktailsList } from '../actions/index';
 
 const Home = () => {
-  const cocktails = useSelector((state) => state.cocktails);
+  const { cocktails } = useSelector((state) => state);
+  console.log(cocktails);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(
+      getCocktailsList(),
+    );
+  }, []);
 
   return (
-    <div>
-      {cocktails.map((cocktail) => <p key={cocktail.idDrink}>{cocktail.title}</p>)}
-    </div>
+    <div />
   );
 };
 
