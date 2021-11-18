@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import EachCocktail from './EachCocktail';
 
 const AllCocktails = ({ cocktails }) => (
   <div>
@@ -7,6 +8,7 @@ const AllCocktails = ({ cocktails }) => (
       <>
         <p key={cocktail.idDrink}>{cocktail.strDrink}</p>
         <img src={cocktail.strDrinkThumb} alt={cocktail.strDrinkThumb} />
+        <EachCocktail cocktail={cocktail} />
       </>
     ))}
   </div>
