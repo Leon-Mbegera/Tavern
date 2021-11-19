@@ -16,15 +16,18 @@ const Home = () => {
 
   const handleFilterChange = (e) => setSearch(e.target.value);
 
+  let filteredCocktails;
   const filteredDisplay = () => {
-    const filteredCocktails = cocktails.cocktails.filter(
+    filteredCocktails = cocktails.cocktails.filter(
       (each) => each.strDrink.includes(search.toLowerCase()),
     );
+    return filteredCocktails;
   };
 
   return (
     <>
-      <AllCocktails cocktails={cocktails} />
+      <SearchBar handleFilterChange={handleFilterChange} />
+      <AllCocktails cocktails={filteredDisplay()} />
     </>
   );
 };

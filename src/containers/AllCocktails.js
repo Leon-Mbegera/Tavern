@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const AllCocktails = ({ cocktails }) => (
   <div>
-    {cocktails.cocktails.map((cocktail, idx) => (
+    {cocktails.map((cocktail, idx) => (
       <>
         <p key={cocktail.idDrink}>{cocktail.strDrink}</p>
         <img src={cocktail.strDrinkThumb} alt={cocktail.strDrinkThumb} />
