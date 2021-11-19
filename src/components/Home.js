@@ -15,6 +15,13 @@ const Home = () => {
   }, []);
 
   const handleFilterChange = (e) => setSearch(e.target.value);
+
+  const filteredDisplay = () => {
+    const filteredCocktails = cocktails.cocktails.filter(
+      (each) => each.strDrink.includes(search.toLowerCase()),
+    );
+  };
+
   return (
     <>
       <AllCocktails cocktails={cocktails} />
