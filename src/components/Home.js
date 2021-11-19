@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCocktailsList } from '../actions/index';
 import AllCocktails from '../containers/AllCocktails';
@@ -13,9 +13,9 @@ const Home = () => {
   }, []);
 
   return (
-    <main>
+    <>
       <AllCocktails cocktails={cocktails} />
-    </main>
+    </>
   );
 };
 

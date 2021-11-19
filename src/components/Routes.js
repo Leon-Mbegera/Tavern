@@ -1,20 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Header from './Header';
+import EachCocktail from '../containers/EachCocktail';
 
-const Routes = () => (
+const Routing = () => (
   <BrowserRouter>
     <Header />
-    <Switch>
-      <Route path="/">
-        {' '}
-        <Home />
-      </Route>
-      <Route />
-      <Route />
-    </Switch>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route exact path="/cocktail/:idx" element={<EachCocktail />} />
+    </Routes>
   </BrowserRouter>
 );
 
-export default Routes;
+export default Routing;
