@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-  <nav>
-    <div>
-      <Link to="/" className="nav-link">Home</Link>
+  <nav className="h-500">
+    <div className="display-6">
+      <Link to="/" className="nav-link">TAVERN</Link>
     </div>
   </nav>
 );
