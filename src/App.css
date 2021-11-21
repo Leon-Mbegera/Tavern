@@ -1,0 +1,14 @@
+header {
+  height: 5rem;
+  background-color: rgba(52, 73, 94, 1);
+}
+
+header div {
+  padding-left: 1.5rem;
+}
+
+.Brand {
+  line-height: 5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+

@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../App.css';
 
 const Header = () => (
-  <nav className="h-500">
-    <div className="display-6">
-      <Link to="/" className="nav-link">TAVERN</Link>
-    </div>
-  </nav>
+  <header>
+    <nav className="navbar navbar-light">
+      <div>
+        <i className="fa fa-beer" aria-hidden="true" />
+        <Link to="/" className="Brand navbar-brand text-danger fs-1 fw-bolder">TAVERN</Link>
+      </div>
+    </nav>
+  </header>
 );
 
 export default Header;
