@@ -19,7 +19,7 @@ const Home = () => {
   let filteredCocktails;
   const filteredDisplay = () => {
     filteredCocktails = cocktails.cocktails.filter(
-      (each) => each.strDrink.includes(search.toLowerCase()),
+      (each) => each.strDrink.includes(search),
     );
     return filteredCocktails;
   };
