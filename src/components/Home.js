@@ -21,6 +21,10 @@ const Home = () => {
     filteredCocktails = cocktails.cocktails.filter(
       (each) => each.strDrink.toLowerCase().startsWith(search.toLowerCase()),
     );
+    if (filteredCocktails && filteredCocktails.length) {
+      return filteredCocktails;
+    }
+    filteredCocktails = cocktails.cocktails;
     return filteredCocktails;
   };
 
