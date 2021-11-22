@@ -29,7 +29,7 @@ const EachCocktail = () => {
           <p className="price">
             Ksh.
             {' '}
-            {Math.floor(Math.random() * 1000)}
+            {Math.floor(Math.random() * (3000 - 1000) + 1000)}
           </p>
         </div>
         <div>
