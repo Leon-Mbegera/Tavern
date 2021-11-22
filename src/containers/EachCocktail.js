@@ -18,23 +18,25 @@ const EachCocktail = () => {
 
   const clicked = cocktails.cocktails[idx];
   return (
-    <div className="container-fluid my-4 d-flex flex-direction-column">
-      <div className="col-8">
-        <img src={clicked.strDrinkThumb} alt="eachCocktail" />
-      </div>
-      <div className="col-4">
-        <p className="cocktail-name">{clicked.strDrink}</p>
-        <div className="mb-4">
-          <FontAwesomeIcon icon={faTag} className="price-tag" />
-          <p className="price">
-            Ksh.
-            {' '}
-            {Math.floor(Math.random() * (3000 - 1000) + 1000)}
-          </p>
-        </div>
+    <div className="container my-4">
+      <div className="d-flex flex-row justify-content-between">
         <div>
-          <button type="button" className="btn btn-danger btn-block">Add to cart</button>
-          <FontAwesomeIcon icon={faShoppingCart} className="shopping-cart" />
+          <img src={clicked.strDrinkThumb} alt="eachCocktail" className="img-div" />
+        </div>
+        <div className="cocktail-info">
+          <p className="cocktail-name">{clicked.strDrink}</p>
+          <div className="mb-4">
+            <FontAwesomeIcon icon={faTag} className="price-tag" />
+            <p className="price">
+              Ksh.
+              {' '}
+              {Math.floor(Math.random() * (3000 - 1000) + 1000)}
+            </p>
+          </div>
+          <div>
+            <button type="button" className="btn btn-danger btn-block">Add to cart</button>
+            <FontAwesomeIcon icon={faShoppingCart} className="shopping-cart" />
+          </div>
         </div>
       </div>
     </div>
