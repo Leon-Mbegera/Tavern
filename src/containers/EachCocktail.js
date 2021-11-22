@@ -26,11 +26,15 @@ const EachCocktail = () => {
         <div className="cocktail-info">
           <p className="cocktail-name">{clicked.strDrink}</p>
           <div className="mb-4">
-            <FontAwesomeIcon icon={faTag} className="price-tag" />
-            <p className="price">
+            <FontAwesomeIcon icon={faTag} className="price-tag d-block" />
+            <p className="price d-inline">
               Ksh.
               {' '}
               {Math.floor(Math.random() * (3000 - 1000) + 1000)}
+            </p>
+            <p className="d-inline mx-3 text-danger fw-bold">
+              {Math.floor(Math.random() * (50 - 15) + 15)}
+              <span>% Off</span>
             </p>
           </div>
           <div>
