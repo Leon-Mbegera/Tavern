@@ -54,6 +54,29 @@ header div {
   color: #b3b4b8;
 }
 
+.cocktail-name {
+  font-size: 1.7em;
+  font-weight: bold;
+  font-stretch: stretch;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:darkslategrey
+}
+
+.price-tag {
+  font-size: 2.1rem;
+  color: #FFC107;
+}
+
+.price {
+  font-size: 1.7em;
+}
+
+.shopping-cart {
+  font-size: 2.1rem;
+  color: #FFC107;
+  margin: auto auto -0.5rem 1rem;
+}
+
 .blink {
   animation: blink-animation 2s steps(5, start) infinite;
   -webkit-animation: blink-animation 2s steps(5, start) infinite;

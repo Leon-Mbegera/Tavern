@@ -37,15 +37,6 @@ const getCocktailsList = () => (dispatch) => {
   });
 };
 
-// const getEachCocktail = () => (dispatch) => {
-//   dispatch(getCocktailsRequest());
-//   cocktails.forEach(cocktail => {
-//     const title = cocktail.strDrink,
-//     const image = cocktail.strDrinkThumb;
-//   });
-//   dispatch(getCocktail(title, image));
-// }
-
 export {
   GET_COCKTAILS_REQUEST, GET_COCKTAILS_SUCCESS,
   GET_COCKTAILS_FAILURE, GET_COCKTAIL, getCocktailsRequest, getCocktailsList, getCocktail,
