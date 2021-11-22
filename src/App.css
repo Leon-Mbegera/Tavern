@@ -35,7 +35,14 @@ header div {
 .discount {
   border-top: 3px solid red;
   border-bottom: 3px solid red;
-  margin: 0 auto 0.5rem 2rem;
+  margin: 0 2rem 0.5rem 2rem;
+}
+
+.live-now {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #FFC107;
+   margin: 0 2rem 0.5rem 1rem;
 }
 
 ::placeholder {
@@ -45,6 +52,21 @@ header div {
   line-height: normal;
   letter-spacing: -0.15px;
   color: #b3b4b8;
+}
+
+.blink {
+  animation: blink-animation 2s steps(5, start) infinite;
+  -webkit-animation: blink-animation 2s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 

@@ -6,6 +6,7 @@ const SearchBar = ({ handleFilterChange }) => (
     <div className="d-flex flex-direction-column offer">
       <h4 className="fw-bold">NOVEMBER BLACK FRIDAY SALES</h4>
       <p className="discount py-1">Up to 50% off</p>
+      <p className="live-now blink">LIVE NOW</p>
     </div>
     <div className="form-outline my-3 Searchbar">
       <input
