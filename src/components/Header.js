@@ -8,10 +8,12 @@ const Header = () => (
   <header>
     <nav className="navbar navbar-light">
       <div>
-        <Link to="/" className="Brand navbar-brand text-danger fs-1 fw-bolder">TAVERN</Link>
-        <span className="Logo">
-          <FontAwesomeIcon icon={faGlassCheers} />
-        </span>
+        <Link to="/" className="Brand navbar-brand text-danger fs-1 fw-bolder">
+          TAVERN
+          <span className="Logo mx-2">
+            <FontAwesomeIcon icon={faGlassCheers} />
+          </span>
+        </Link>
       </div>
     </nav>
   </header>

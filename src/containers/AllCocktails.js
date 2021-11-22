@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const AllCocktails = ({ cocktails }) => (
-  <div className="row">
+  <div className="container-fluid row">
     {cocktails.map((cocktail, idx) => (
       <>
         <div className="col-md-3">
