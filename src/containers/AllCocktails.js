@@ -10,7 +10,7 @@ const AllCocktails = ({ cocktails }) => (
           <div className="card bg-warning mb-3" style={{ width: '20rem' }}>
             <img className="card-img-top" src={cocktail.strDrinkThumb} alt={cocktail.strDrinkThumb} />
             <div className="card-body">
-              <h6 className="card-title fw-bolder" key={cocktail.idDrink}>{cocktail.strDrink}</h6>
+              <h6 className="card-title fw-bold" key={cocktail.idDrink}>{cocktail.strDrink}</h6>
               <Link className="btn btn-danger btn-block" to={`/cocktail/${idx}`}>Cocktail</Link>
             </div>
           </div>
