@@ -1,8 +1,6 @@
 import allReducer from '../reducers/allReducer';
 import {
   GET_COCKTAILS_REQUEST, GET_COCKTAILS_SUCCESS,
-  GET_COCKTAILS_FAILURE, GET_COCKTAIL, getCocktailsRequest, getCocktailsList, getCocktail,
-  getCocktailsSuccess, getCocktailsFailure,
 } from '../actions/index';
 
 const initialState = {
