@@ -29,6 +29,7 @@ const getCocktailsList = () => (dispatch) => {
   dispatch(getCocktailsRequest());
   const endpoint = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail';
   axios.get(endpoint).then((response) => {
+    console.log(response);
     const cocktails = response.data.drinks;
     dispatch(getCocktailsSuccess(cocktails));
   }).catch((error) => {
