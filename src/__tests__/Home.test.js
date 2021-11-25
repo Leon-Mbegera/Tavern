@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter, MemoryRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 import store from '../store';
 import SearchBar from '../components/Search';
 

@@ -7,7 +7,7 @@ const AllCocktails = ({ cocktails }) => (
     {cocktails.map((cocktail, idx) => (
       <>
         <div className="col-md-3">
-          <div className="card bg-warning mb-3" style={{ width: '20rem' }}>
+          <div className="card bg-warning mb-3" data-testid="cocktail-card" style={{ width: '20rem' }}>
             <img className="card-img-top" src={cocktail.strDrinkThumb} alt={cocktail.strDrinkThumb} />
             <div className="card-body">
               <h6 className="card-title fw-bold" key={cocktail.idDrink}>{cocktail.strDrink}</h6>
