@@ -7,19 +7,19 @@ import SearchBar from '../components/Search';
 
 afterEach(cleanup);
 
-describe('Home component', () => {
+describe('Home component renders both the Search bar and Allcocktails', () => {
   test('should render the search component', () => {
     const { asFragment } = render(
       <BrowserRouter>
         <Provider store={store}>
-          <SearchBar />
+          <SearchBar handleFilterChange={jest.fn()} />
         </Provider>
       </BrowserRouter>,
     );
     expect(
       asFragment(
         <Provider store={store}>
-          <SearchBar />
+          <SearchBar handleFilterChange={jest.fn()} />
         </Provider>,
       ),
     ).toMatchSnapshot();

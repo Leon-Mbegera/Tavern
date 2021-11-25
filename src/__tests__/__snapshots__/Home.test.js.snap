@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home component should render the search component 1`] = `
+exports[`Home component renders both the Search bar and Allcocktails should render the search component 1`] = `
 <DocumentFragment>
   <div
     class="sub-header container-fluid d-flex flex-direction-column justify-content-between"
