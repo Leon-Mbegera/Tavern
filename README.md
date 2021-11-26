@@ -8,7 +8,6 @@
 ![](src/assets/tarvern.PNG)
 
 
-
 ## BUILT WITH
 - JavaScript
 - Node.js
@@ -18,11 +17,7 @@
 - ES6
 - CSS
 
-## Live Demo
-
-
 ## Getting Started
-# Prerequisities
 
 To run this project locally, you must have node and npm installed on your machine.
 
@@ -45,7 +40,8 @@ Go to http://localhost:3000/ in your browser to see the application running
 
 # To test the code
 
- - Run npm test
+ `npm test`
+ 
  - Enter 'a' to see all tests
 
 
