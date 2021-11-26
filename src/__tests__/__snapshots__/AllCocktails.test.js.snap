@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot of the all cocktails page 1`] = `
+exports[`test for the AllCocktails component snapshot of the all cocktails page 1`] = `
 <div
   className="container-fluid row wrapper"
 >

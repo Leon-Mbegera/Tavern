@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTag, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { getCocktailsList } from '../actions/index';

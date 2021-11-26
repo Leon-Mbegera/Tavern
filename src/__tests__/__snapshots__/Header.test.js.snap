@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The header component rendered matches the snapshot 1`] = `
+exports[`test for the header component The header component rendered matches the snapshot 1`] = `
 <header>
   <nav
     className="navbar navbar-light"
