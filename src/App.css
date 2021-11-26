@@ -20,7 +20,7 @@ header div {
 
 .Logo {
   font-size: 2.4rem;
-  color: #DC3545;
+  color: #dc3545;
 }
 
 .sub-header {
@@ -45,8 +45,8 @@ header div {
 .live-now {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #FFC107;
-   margin: 0 2rem 0.5rem 1rem;
+  color: #ffc107;
+  margin: 0 2rem 0.5rem 1rem;
 }
 
 ::placeholder {
@@ -70,14 +70,13 @@ header div {
 .cocktail-name {
   font-size: 1.7em;
   font-weight: bold;
-  font-stretch: stretch;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  color:darkslategrey
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkslategrey;
 }
 
 .price-tag {
   font-size: 2.1rem;
-  color: #FFC107;
+  color: #ffc107;
 }
 
 .price {
@@ -86,7 +85,7 @@ header div {
 
 .shopping-cart {
   font-size: 2.1rem;
-  color: #FFC107;
+  color: #ffc107;
   margin: auto auto -0.5rem 1rem;
 }
 
@@ -94,16 +93,15 @@ header div {
   animation: blink-animation 2s steps(5, start) infinite;
   -webkit-animation: blink-animation 2s steps(5, start) infinite;
 }
+
 @keyframes blink-animation {
   to {
     visibility: hidden;
   }
 }
+
 @-webkit-keyframes blink-animation {
   to {
     visibility: hidden;
   }
 }
-
-
-
