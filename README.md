@@ -1,31 +1,63 @@
-# Getting Started with Create React App
+#  Tavern
+- It is an online cocktail supply store. It shows a long list of tasty cocktails to view and make orders from. It is a single page application that links to each individual cocktail page to see the price and add to cart.
+- Users can filter the displayed cocktails by searching their names. Then directly view each individually.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Heroku link
+[click here](https://mbegerastavern.herokuapp.com/)
 
-## Available Scripts
+![](src/assets/tarvern.PNG)
 
-In the project directory, you can run:
+
+## BUILT WITH
+- JavaScript
+- Node.js
+- React
+- React-Create-App
+- Redux
+- ES6
+- CSS
+
+## Getting Started
+
+To run this project locally, you must have node and npm installed on your machine.
+
+# Setup
+To set up this project on your local machine:
+
+Navigate to the folder where you want the repository to be copied and run 
+
+`git clone https://github.com/Leon-Mbegera/Tavern.git`
+
+Navigate to the directory :
+
+`cd tavern`
+
+To start the server: 
 
 `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Go to http://localhost:3000/ in your browser to see the application running
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# To test the code
 
-`npm test a`
+ `npm test`
+ 
+ - Enter 'a' to see all tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-`npm build`
+## Author
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+👤 **Leon**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- GitHub: [github](https://github.com/Leon-Mbegera)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/leon-mbegera)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🤝 Contributing
 
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Leon-Mbegera/tarvern/issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
